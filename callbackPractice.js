@@ -67,7 +67,13 @@ multiply(4, 3, function(answer){
 // If it does, invoke the callback with true as an argument.
 // If the name does not exist, invoke the callback with false as an argument.
 
-
+function contains(arr, val, cb) {
+  if (arr.indexOf(val) != -1) {
+    return cb(true);
+  } else {
+    return cb(false);
+  }
+}
 
 
 contains(names, 'Colt', function(result){
