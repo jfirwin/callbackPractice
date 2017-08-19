@@ -37,7 +37,10 @@ first(names, function(firstName){
 
 // 2. Write a function called last which returns the last item of the array using a callback function.
 
-
+function last (names, cb) {
+  var lastName = names[names.length -1];
+  return cb(lastName);
+}
 
 last(names, function(lastName){
   console.log('The last name in names is ' + lastName);
