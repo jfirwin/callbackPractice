@@ -51,6 +51,10 @@ last(names, function(lastName){
 
 // 3. Write a function called multiply that multiplies two numbers. Invoke the callback with the result of the multiplication.
 
+function multiply(num1, num2, cb) {
+  var answer = num1 * num2;
+  return cb(answer);
+}
 
 
 multiply(4, 3, function(answer){
