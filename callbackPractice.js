@@ -123,8 +123,13 @@ each(names, function(item, indice){
 // 7. Write a function called getUserById that looks at the array of user objects (users) and searches for a user by ID.
 // When the correct user object is found, invoke the callback with the user object as an argument.
 
-// Code here
-
+function getUserById (arr, id, cb) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i].id === id) {
+      cb(arr[i]);
+    }
+  }
+}
 
 
 var users = [
